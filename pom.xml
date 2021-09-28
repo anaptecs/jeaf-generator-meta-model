@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-module-project-parent</artifactId>
+		<version>1.0.16</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.generator</groupId>
+	<artifactId>jeaf-meta-model-project</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>JEAF Generator Meta Model Project</name>
+	<description>Project contains the JEAF UML Meta Model Extensions (UML  profile / stereotypes) that are required to use JEAF Generator.</description>
+	<url>https://www.anaptecs.de/jeaf</url>
+
+	<scm>
+		<connection>scm:git:https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</developerConnection>
+		<url>https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</url>
+	</scm>
+
+	<modules>
+		<module>jeaf-meta-model</module>
+	</modules>
+
+</project>
