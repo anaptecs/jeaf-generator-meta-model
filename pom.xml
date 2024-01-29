@@ -15,12 +15,12 @@
 	<packaging>pom</packaging>
 	<name>JEAF Generator Meta Model Project</name>
 	<description>Project contains the JEAF UML Meta Model Extensions (UML  profile / stereotypes) that are required to use JEAF Generator.</description>
-	<url>https://www.anaptecs.de/jeaf</url>
+	<url>https://www.jeaf-generstor.io</url>
 
 	<scm>
-		<connection>scm:git:https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</connection>
-		<developerConnection>scm:git:https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</developerConnection>
-		<url>https://bitbucket.org/anaptecs/jeaf-generator-meta-model.git</url>
+		<connection>scm:git:https://github.com/anaptecs/jeaf-generator-meta-model.git</connection>
+		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-generator-meta-model.git</developerConnection>
+		<url>https://github.com/anaptecs/jeaf-generator-meta-model.git</url>
 	  <tag>HEAD</tag>
   </scm>
 
