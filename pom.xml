@@ -16,6 +16,11 @@
 	<name>JEAF Generator Meta Model Project</name>
 	<description>Project contains the JEAF UML Meta Model Extensions (UML  profile / stereotypes) that are required to use JEAF Generator.</description>
 	<url>https://www.jeaf-generstor.io</url>
+	
+	<properties>
+		<jeaf-generator.version>1.17.3</jeaf-generator.version>
+		<jeaf.test.model.version>1.0.89</jeaf.test.model.version>
+	</properties>
 
 	<scm>
 		<connection>scm:git:https://github.com/anaptecs/jeaf-generator-meta-model.git</connection>
@@ -26,6 +31,8 @@
 
 	<modules>
 		<module>jeaf-meta-model</module>
+		<module>jeaf-meta-model-templates</module>
+		<module>jeaf-meta-model-docs</module>
 	</modules>
 
 </project>
