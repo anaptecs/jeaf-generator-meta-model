@@ -45,11 +45,14 @@
 				</executions>
 				<configuration>
 					<!-- Define input files and directories where output should be write to. -->
+					<!--
 					<modelArtifactGroupID>com.anaptecs.jeaf.uml</modelArtifactGroupID>
 					<modelArtifactArtifactID>jeaf-uml-test-model</modelArtifactArtifactID>
 					<modelArtifactXMIPath>xmi</modelArtifactXMIPath>
+					-->
 
-					<umlModelFile>JEAF_Test.uml</umlModelFile>
+					<xmiDirectory>${project.basedir}/../jeaf-meta-model/xmi</xmiDirectory>
+					<umlModelFile>JEAF_Generator_Metamodel.uml</umlModelFile>
 					
 					<!-- Waiting for #119
 					<xmiDirectory>../jeaf-meta-model/xmi</xmiDirectory>
