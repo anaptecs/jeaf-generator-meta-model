@@ -6,10 +6,10 @@ This repository contains the JEAF Generator Meta Model. The meta model is requir
 ## Links ##
 For further information please refer to our documentation:
 
-* [How to setup MagicDraw UML Projects](https://anaptecs.atlassian.net/l/c/JExsVrNc)
-* [JEAF Generator](https://anaptecs.atlassian.net/l/c/N7r5x11X)
-* [JEAF Modelling Guide](https://anaptecs.atlassian.net/l/c/1B2ci31g)
+* [JEAF Generator Meta Model](https://www.jeaf-generator.io/uml-modeling-guide/jmm/)
+* [JEAF Generator](https://www.jeaf-generator.io)
+* [JEAF Modeling Guide](https://www.jeaf-generator.io/uml-modeling-guide/)
 
 ## How do I get set up? ##
 
-* [How to setup MagicDraw UML Projects](https://anaptecs.atlassian.net/l/c/JExsVrNc)
+* [How to setup MagicDraw UML Projects](https://www.jeaf-generator.io/uml-modeling-guide/uml-modeling-tools/)
