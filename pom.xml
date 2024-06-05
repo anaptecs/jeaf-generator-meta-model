@@ -5,8 +5,8 @@
 	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
 	<parent>
 		<groupId>com.anaptecs.jeaf</groupId>
-		<artifactId>jeaf-module-project-parent</artifactId>
-		<version>1.6.33</version>
+		<artifactId>jeaf-plugin-project-parent</artifactId>
+		<version>1.8.8</version>
 	</parent>
 
 	<groupId>com.anaptecs.jeaf.generator</groupId>
