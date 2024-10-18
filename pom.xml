@@ -11,7 +11,7 @@
 
 	<groupId>com.anaptecs.jeaf.generator</groupId>
 	<artifactId>jeaf-meta-model-project</artifactId>
-	<version>2.4.0</version>
+	<version>2.4.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>JEAF Generator Meta Model Project</name>
 	<description>Project contains the JEAF UML Meta Model Extensions (UML  profile / stereotypes) that are required to use JEAF Generator.</description>
@@ -26,7 +26,7 @@
 		<connection>scm:git:https://github.com/anaptecs/jeaf-generator-meta-model.git</connection>
 		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-generator-meta-model.git</developerConnection>
 		<url>https://github.com/anaptecs/jeaf-generator-meta-model.git</url>
-	  <tag>v2.4.0</tag>
+	  <tag>v2.2.0</tag>
   </scm>
 
 	<modules>

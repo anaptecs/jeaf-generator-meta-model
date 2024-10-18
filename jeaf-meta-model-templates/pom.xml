@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.anaptecs.jeaf.generator</groupId>
 		<artifactId>jeaf-meta-model-project</artifactId>
-		<version>2.4.0</version>
+		<version>2.4.1-SNAPSHOT</version>
 	</parent>
 
 	<name>JEAF Generator Stereotype Docs</name>
