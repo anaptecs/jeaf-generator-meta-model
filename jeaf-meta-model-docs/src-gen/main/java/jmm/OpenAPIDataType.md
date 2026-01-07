@@ -19,6 +19,7 @@ During serialization the "real" Java object will be converted into a primitive J
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `inline`   | `Boolean` | Tagged value defines if all occurrences of the type should be inlined in the OpenAPI specification or if a explicit type should be created. |
 | `compositeDataType`   | `Boolean` | There are cases where you want to have a type that consists of more than one property in Java but still just a flat JSON representation. In this case you can mark you class as so called composite data type. <br><br>This allows to have multiple properties on it. |
+| `implementCompareable`   | `Boolean` | Tagged value defines if the Java representation of this type should implement interface `java.lang.Comparable`.<br><br>By default the property is set to `false`. |
 
 
 
