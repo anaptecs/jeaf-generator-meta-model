@@ -24,6 +24,7 @@ The stereotype `«MavenProject»` can be used to add Maven-specific information 
 | `scmPath`   | `String` | This tag can be used to define the SCM path, as supported in a Maven POM. If no value is specified here, the configured SCM path pattern will be used.<br><br>By default, no SCM path will be defined in the generated POM file.. |
 | `customizable`   | `Boolean` | This tag specifies whether the generated POMs for this artifact should be customizable.<br><br>If the tag is set to `true`, the generated POM files will include several so-called protected regions where customizations can be made. Since the generated POM files work out of the box in almost all cases, it is recommended to enable this option only when truly necessary. |
 | `customArchetypeName`   | `String` |  |
+| `modelCoordinatesSource`   | `UMLCoordinatesSourceType` | Tag defines from where coordinates for UML model lookup are taken.<br><br>The following options are available:<br>* `USE_FROM_PARENT_POM`: Use UML model coordinates from parent POM<br>* `USE_OWN`: UML model coordinates should be defined within this Maven project<br>* `USE_PARENT_OR_OWN`: Use coordinates from parent POM if applicable. If not then they should be defined within this Maven project.<br>* `NONE`: Within this Maven project no UML model coordinates should be defined.<br>* `USE_DEFAULT`: Use default settings as defined in configuration of JEAF Generator Maven Plugin. |
 
 
 
