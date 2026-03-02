@@ -29,6 +29,13 @@
 		<tag>HEAD</tag>
 	</scm>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/anaptecs/jeaf-generator-meta-model</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<modules>
 		<module>jeaf-meta-model</module>
 		<module>jeaf-meta-model-templates</module>
