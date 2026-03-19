@@ -1,28 +1,27 @@
 ---
 title: "UML Modeling Guide"
-subtitle: "Stereotype «Release»"
+subtitle: "Stereotype «ChangeDescription»"
 toc: false
 menubar: jmm_menu
 ---
 
-# Stereotype `«Release»`
+# Stereotype `«ChangeDescription»`
 JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»`, «ChangeDescription» and `«ReleaseNotesEntry»`.
 
-Stereotype `«Release»` marks a package representing a specific artifact release (e.g., 1.2.3).
-
-As version number of the release the package name will be used.
+Stereotype `«ChangeDescription»` marks a comment as a description for a change. The associated version is determined by the package containing the comment.
 
 <br>
 
-| **Stereotype**          | `«Release»` | |
+| **Stereotype**          | `«ChangeDescription»` | |
 | ----------------------- | -------------- | |
-| **Applicable Elements** | `Package`        |
+| **Applicable Elements** | `Comment`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `umlModelRevision`   | `int` | Revision of the UML model that was used for a the release. |
-| `scmTagName`   | `String` | Name of the SCM tag that was created for the release. |
-| `releaseDate`   | `String` | Date when the release was published. Expected date format is `yyyy-mm-dd`. |
+| `issueID`   | `String` | ID of the issue that belongs to this entry. |
+| `issueLink`   | `String` | Explicit link to the issue that belongs to this issue. This link can be used as alternative to the mechanism where the issue link is generated based on the ID and a base URL. |
+| `releaseNotesEntryType`   | `ReleaseNotesEntryType` | Type of the release notes entry.<br><br>The following types are defined:<br><br>- `GENERAL_INFORMATION`: Entry in the general section of the release notes<br><br>- `FEATURE`: Entry describes a new feature<br><br>- `IMPROVEMENT`: Entry describes an improvement<br><br>- `BUGFIX`: Entry is about a bug that was fixed<br><br>- `MIGRATION_NOTICE`: Entry contains information how to migrate to this version |
 | `compatibilityInfos`   | `CompatibilityType` | Compatibility information about a release.<br><br>Currently the following values can be used:<br><br>- `STRICT_FORWARD_COMPATIBLE`: The release is strictly forward compatible, meaning that consumers of an artifact can work with newer versions than the providers. This also implies that the provider does not need to be deployed before the consumers.<br><br>If forward compatibility is provided at all, it is usually limited to the same major version.<br><br>- `API_FORWARD_COMPATIBLE`: The release is forward compatible from an API perspective. This means that, in general, a client can work with a newer version of an API than the provider. However, unlike strict forward compatibility, the new API version must be deployed on the provider side first.<br><br>**Example:**<br>A request property of a REST service changes from mandatory to optional. From an API perspective, this is a forward-compatible change. However, from a runtime perspective, requests may still be rejected if the property is missing until the REST service has been updated to accept the now-optional property.<br><br>- `BACKWARD_COMPATIBLE`: The release is backward compatible. This means that consumers can work with an older version than providers.<br><br><br>**Notes**<br>- Depending in the type of an artifact a *"provider"* can be a REST service or also an event source or something else that provides any kind of information to a consumer.<br><br>- Same also applies to the *"consumer"*. There is might be a REST client or a event consumer or something else. |
+| `changeType`   | `ChangeType` | Type of the change that is described by this entry. |
 
 
 

@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«ReleaseUnit»`
-JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»` and `«ReleaseNotesEntry»`.
+JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»`, «ChangeDescription» and `«ReleaseNotesEntry»`.
 
 Stereotype `«ReleaseUnit»` marks a package that contains release information for an artifact.
 
@@ -18,7 +18,7 @@ Stereotype `«ReleaseUnit»` marks a package that contains release information f
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `releaseUnitName`   | `String` | Tagged value for the name of the release unit. |
-| `issueManagementSystemBaseURL`   | `String` | Base URL of the issue management system. This information will be used to provide links to issues in release notes. |
+| `issueTrackingSystemBaseURL`   | `String` | Base URL of the issue tracking system. This information will be used to provide links to issues in release notes.<br><br>It is also possible to provide that information on domain and on global level. |
 | `issueDisplayNamePrefix`   | `String` | Optional name prefix for an issue. This prefix will only be used as display info for the ID of an issue. |
 
 

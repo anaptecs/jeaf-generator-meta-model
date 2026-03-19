@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«ReleaseNotesEntry»`
-JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»` and `«ReleaseNotesEntry»`.
+JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»`, «ChangeDescription» and `«ReleaseNotesEntry»`.
 
 Stereotype `«ReleaseNotesEntry»` marks a comment as a release notes entry. The associated version is determined by the package containing the comment.
 
@@ -17,9 +17,7 @@ Stereotype `«ReleaseNotesEntry»` marks a comment as a release notes entry. The
 | **Applicable Elements** | `Comment`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `issueID`   | `String` | ID of the issue that belongs to this entry. |
-| `issueLink`   | `String` | Explicit link to the issue that belongs to this issue. This link can be used as alternative to the mechanism where the issue link is generated based on the ID and a base URL. |
-| `entryType`   | `ReleaseNotesEntryType` | Type of the release notes entry.<br><br>The following types are defined:<br><br>- `GENERAL`: Entry in the general section of the release notes<br><br>- `FEATURE`: Entry describes a new feature<br><br>- `IMPROVEMENT`: Entry describes an improvement<br><br>- `BUGFIX`: Entry is about a bug that was fixed<br><br>- `MIGRATION_NOTICE`: Entry contains information how to migrate to this version |
+| `releaseNotesEntryType`   | `ReleaseNotesEntryType` | Type of the release notes entry.<br><br>The following types are defined:<br><br>- `GENERAL_INFORMATION`: Entry in the general section of the release notes<br><br>- `FEATURE`: Entry describes a new feature<br><br>- `IMPROVEMENT`: Entry describes an improvement<br><br>- `BUGFIX`: Entry is about a bug that was fixed<br><br>- `MIGRATION_NOTICE`: Entry contains information how to migrate to this version |
 
 
 
