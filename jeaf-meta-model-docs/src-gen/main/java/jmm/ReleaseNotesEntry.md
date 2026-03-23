@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«ReleaseNotesEntry»`
-JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»`, «ChangeDescription» and `«ReleaseNotesEntry»`.
+JEAF Generator allows release note information to be defined directly in the UML model using the stereotypes: `«ReleaseUnit»`, `«Release»`, `«ChangeDescription»` and `«ReleaseNotesEntry»`.
 
 Stereotype `«ReleaseNotesEntry»` marks a comment as a release notes entry. The associated version is determined by the package containing the comment.
 
@@ -17,7 +17,8 @@ Stereotype `«ReleaseNotesEntry»` marks a comment as a release notes entry. The
 | **Applicable Elements** | `Comment`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `releaseNotesEntryType`   | `ReleaseNotesEntryType` | Type of the release notes entry.<br><br>The following types are defined:<br><br>- `GENERAL_INFORMATION`: Entry in the general section of the release notes<br><br>- `FEATURE`: Entry describes a new feature<br><br>- `IMPROVEMENT`: Entry describes an improvement<br><br>- `BUGFIX`: Entry is about a bug that was fixed<br><br>- `MIGRATION_NOTICE`: Entry contains information how to migrate to this version |
+| `releaseNotesEntryType`   | `ReleaseNotesEntryType` | Type of the release notes entry.<br><br>The following types are defined:<br>- `GENERAL_INFORMATION`: Entry in the general section of the release notes<br><br>- `MIGRATION_NOTICE`: Entry contains information how to migrate to this version<br><br>- `DOCUMENTATION`: Entry contains information about further documentation<br><br>- `CONTRIBUTORS`: Entry contains information about contributors |
+| `details`   | `String` | Detailed description of the release notes entry. |
 
 
 
