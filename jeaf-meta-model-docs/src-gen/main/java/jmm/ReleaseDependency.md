@@ -17,7 +17,7 @@ It allows dependencies to be specified at the level of release units, thereby av
 | **Applicable Elements** | `Dependency`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `versionResolution`   | `VersionResolutionType` | The property defines how the matching release is resolved.<br><br>The following options are supported:<br>- `LATEST_VERSION`: The most recent version overall is used when a new release is built.<br><br>- `LATEST_VERSION_BUT_SAME_MAJOR`: The most recent version with the same major version is used when a new release is built. |
+| `releaseNotesResolution`   | `ReleaseNotesResolutionType` | Tagged value defines based on which pattern release note information are aggregated. Basically its about which version from bundled artifacts showed be considered to be part of a release. |
 
 
 

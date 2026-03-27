@@ -24,6 +24,7 @@ Each domain has a clear set of capabilities and responsibilities.
 | `groupId`   | `String` | Optional tagged value can be used to define a Maven group ID for a domain. This property is connected with features for Maven Project generation from UML model.<br><br>If no group ID is explicitly defined then the full package path will be used. |
 | `scmBasePath`   | `String` | SCM base path for all Maven projects of the domain. This base base can be further adjusted in the Maven project configuration in the UML model and in the Maven Plugin settings. |
 | `issueTrackingURL`   | `String` | HTTP base path of the issue tracking system that is used for this domain. If you want to use the same issue tracking system for several domains then it also is possible to provide a default issues tracking base path that is used for all domains that do not explicitly define one. |
+| `issueDisplayNamePrefix`   | `String` | Optional name prefix for an issue. This prefix will only be used as display info for the ID of an issue. |
 | `domainType`   | `DomainType` | According to DDD there are different types of domains. This tagged value can be used to define the type of a domain.<br><br>The following types are supported:<br><br>- `BUSINESS_DOMAIN`<br><br>- `UTILITY_DOMAIN`<br><br>- `SHARED_KERNEL` |
 
 

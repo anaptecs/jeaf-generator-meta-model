@@ -20,6 +20,8 @@ Stereotype `«ReleaseUnit»` marks a package that contains release information f
 | `releaseUnitName`   | `String` | Tagged value for the name of the release unit. |
 | `issueTrackingURL`   | `String` | Base URL of the issue tracking system. This information will be used to provide links to issues in release notes.<br><br>It is also possible to provide that information on domain and on global level. |
 | `issueDisplayNamePrefix`   | `String` | Optional name prefix for an issue. This prefix will only be used as display info for the ID of an issue. |
+| `groupId`   | `String` | Maven Group ID of a release unit. <br><br>This information only is required if Maven project structures are not defined within the UML model. |
+| `artifactId`   | `String` | Maven Artifact ID of a release unit. <br><br>This information only is required if Maven project structures are not defined within the UML model. |
 
 
 
