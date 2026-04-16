@@ -24,8 +24,8 @@ JEAF Generator supports a so called breaking changes report that lists all the b
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `description`   | `String` | Description of an upcoming breaking change. |
 | `since`   | `String` | Information since when a breaking change was announced for a model element e.g. a concrete version or date. |
-| `activeWith`   | `String` | Version when a breaking change becomes active. <br><br>**Example:**<br>- A new parameter is introduced for a request. To not immediately break the API at first the parameter is optional. Using this field it can be defined when the parameter will be mandatory. |
-| `plannedChangeType`   | `ChangeType` | Type of the planned change. |
+| `activeWith`   | `String` | Version or date when a breaking change becomes active. <br><br>**Example:**<br>- A new parameter is introduced for a request. To not immediately break the API at first the parameter is optional. Using this field it can be defined when the parameter will be mandatory. |
+| `activationDate`   | `String` | Explicit date when the breaking change will be activated.<br><br>The expected date format is `yyyy-mm-dd`. |
 
 
 

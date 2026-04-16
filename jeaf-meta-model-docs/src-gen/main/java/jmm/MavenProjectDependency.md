@@ -16,7 +16,6 @@ The stereotype `«MavenProjectDependency»` can be used to specify dependencies 
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `moduleDependencyTypes`   | `ModuleDependencyType` | This tag can be used to define the dependencies between the related Maven projects at the module level.<br><br>At least one module dependency type must be defined. |
-| `order`   | `int` | This tag can be used to define the order of this dependency among all other `MavenDependency` definitions within the project. |
 
 
 

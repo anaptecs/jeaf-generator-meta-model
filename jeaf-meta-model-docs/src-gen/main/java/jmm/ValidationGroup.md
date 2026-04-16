@@ -14,11 +14,10 @@ A typical use case for validation groups is performing validations that are spec
 
 | **Stereotype**          | `«ValidationGroup»` | |
 | ----------------------- | -------------- | |
-| **Applicable Elements** | `Component`        |
+| **Applicable Elements** | `Class`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `identifier`   | `String` | Identifier for the validation group. The identifier can have any arbitrary value. The only constraint is that it must be unique within the model. |
-| `javaDefaultValidationGroup`   | `Boolean` | If the tagged value is set to `true`, the group will be used as the default validation group in the generated Java code (Jakarta Validation).<br><br>**Notes:**<br><br>- Defining a default validation group is optional. If none is defined, constraints without an explicit validation group use the Jakarta Validation standard default group.<br><br>- Multiple Java default validation groups may be defined.<br><br>- If at least one Java default validation group is defined in the model, the Jakarta Validation standard default group will not be used. |
 | `openAPIValidationGroup`   | `Boolean` | In Java, multiple validation groups can be used in parallel. OpenAPI does not support this capability. Therefore, when validation groups are used, a specific validation group must be designated for OpenAPI.<br><br>During OpenAPI specification generation, only the general constraints and the constraints defined in the OpenAPI validation group are taken into account.<br><br>Only one validation group might have this tag set to `true`. |
 
 

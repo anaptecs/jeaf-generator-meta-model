@@ -1,20 +1,20 @@
 ---
 title: "UML Modeling Guide"
-subtitle: "Stereotype «CompatibilityGroup»"
+subtitle: "Stereotype «CompatibilityInfo»"
 toc: false
 menubar: jmm_menu
 ---
 
-# Stereotype `«CompatibilityGroup»`
-The stereotype `«CompatibilityGroup»` can be used to group constraints that apply to specific versions of an API.
+# Stereotype `«CompatibilityInfo»`
+The stereotype `«CompatibilityInfo»` can be used to define information about version compatibility in the UML model. 
 
-To achieve this, each property that belongs to a compatibility group must define a dependency on that group. Constraints can then be specified on this dependency that differ from the constraints defined directly on the property. This makes it possible to define version-specific constraints.
+This stereotype can be seen as a normalization for compatibility info defined directly on a compatibility group. Using this stereotype it can be avoided to define the same information multiple times.
 
-Default constraints are defined directly on the property, while version-specific constraints are defined on the dependency.
+This compatibility info will be considered for deprecations and breaking changes information. 
 
 <br>
 
-| **Stereotype**          | `«CompatibilityGroup»` | |
+| **Stereotype**          | `«CompatibilityInfo»` | |
 | ----------------------- | -------------- | |
 | **Applicable Elements** | `Component`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
