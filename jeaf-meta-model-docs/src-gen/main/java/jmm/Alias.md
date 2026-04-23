@@ -15,7 +15,7 @@ Stereotype `«Alias»` can be used to express that a model element also has an a
 | **Applicable Elements** | `NamedElement`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `alternateName`   | `String` | Alternate name for the model element. |
+| `alternateNames`   | `String` | Alternate names for the model element. |
 
 
 
