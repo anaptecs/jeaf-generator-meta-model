@@ -13,7 +13,9 @@ Stereotype `«DefaultComment»` can be used to mark a comment of a type as its d
 | **Stereotype**          | `«DefaultComment»` | |
 | ----------------------- | -------------- | |
 | **Applicable Elements** | `Comment`        |
-| **Tagged Values**       | `none`           |
+| **Tagged Values**       |                       |                                                                                                                                                                                                          |
+| **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
+| `applicableElementTypes`   | `DefaultCommentElementType` | Tagged value defines for which model element types the default comment should be applied. |
 
 
 

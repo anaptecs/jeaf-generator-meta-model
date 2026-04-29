@@ -6,9 +6,11 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«Ordered»`
-Stereotype `«Ordered»` can be used to define the order of types / operations in an OpenAPI specification. 
+Stereotype `«Ordered»` can be used to define the order of elements e.g. in an OpenAPI specification.
 
-Explicit ordering must be enabled in the OpenAPI specification using `OpenAPISpecification.explicitTypeOrdering = true` or `OpenAPISpecification.explicitPathOrdering = true`.
+Notes:
+
+- Explicit ordering must be enabled in OpenAPI specifications using `OpenAPISpecification.explicitTypeOrdering = true` or `OpenAPISpecification.explicitPathOrdering = true`.
 
 <br>
 
