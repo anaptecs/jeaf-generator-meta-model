@@ -1,21 +1,23 @@
 ---
 title: "UML Modeling Guide"
-subtitle: "Stereotype «MavenProjectDependency»"
+subtitle: "Stereotype «ReleaseDependency»"
 toc: false
 menubar: jmm_menu
 ---
 
-# Stereotype `«MavenProjectDependency»`
-The stereotype `«MavenProjectDependency»` can be used to specify dependencies within multi-module projects. In such cases, it is necessary to define between which modules the dependencies actually exist.
+# Stereotype `«ReleaseDependency»`
+The stereotype `«ReleaseDependency»` can be used to define dependencies between release units. This mechanism is intended to simplify the modeling of such dependencies.
+
+It allows dependencies to be specified at the level of release units, thereby avoiding the need to define them repeatedly for each individual release.
 
 <br>
 
-| **Stereotype**          | `«MavenProjectDependency»` | |
+| **Stereotype**          | `«ReleaseDependency»` | |
 | ----------------------- | -------------- | |
 | **Applicable Elements** | `Dependency`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `moduleDependencyTypes`   | `ModuleDependencyType` | This tag can be used to define the dependencies between the related Maven projects at the module level.<br><br>At least one module dependency type must be defined. |
+| `releaseNotesResolution`   | `ReleaseNotesResolutionType` | Tagged value defines based on which pattern release note information are aggregated. Basically its about which version from bundled artifacts showed be considered to be part of a release. |
 
 
 
