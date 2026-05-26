@@ -3,6 +3,7 @@
 	<name>jeaf-meta-model-templates</name>
 	<comment></comment>
 	<projects>
+		<project>jeaf-generator-oaw</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -15,9 +16,15 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.openarchitectureware.base.oawBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.openarchitectureware.base.oawNature</nature>
 	</natures>
 </projectDescription>

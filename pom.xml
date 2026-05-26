@@ -14,11 +14,11 @@
 	<version>2.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>JEAF Generator Meta Model Project</name>
-	<description>Project contains the JEAF UML Meta Model Extensions (UML  profile / stereotypes) that are required to use JEAF Generator.</description>
+	<description>Project contains the JEAF UML Meta Model Extensions (UML profile / stereotypes) that are required to use JEAF Generator.</description>
 	<url>https://www.jeaf-generstor.io</url>
 	
 	<properties>
-		<jeaf-generator.version>1.26.0</jeaf-generator.version>
+		<jeaf-generator.version>1.29.3-SNAPSHOT</jeaf-generator.version>
 		<jeaf.test.model.version>1.0.89</jeaf.test.model.version>
 	</properties>
 
