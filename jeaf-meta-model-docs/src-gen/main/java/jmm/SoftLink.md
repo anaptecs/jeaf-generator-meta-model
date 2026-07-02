@@ -15,7 +15,7 @@ So called soft links are a mechanism to decouple objects within your application
 | **Applicable Elements** | `Property`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `softLinkType`   | `SoftLinkType` | JEAF Generator supports the following types for soft links: `String`, `long`, `Long` and `CustomGenericType`.<br><br>In case of `CustomGenericType` the actual type has to be defined as configuration parameter for JEAF Generator in the Maven Configuration. This way you can define your own types. |
+| `softLinkType`   | `SoftLinkType` | JEAF Generator supports the following types for soft links: `String`, `long`, `Long`, `CustomGenericType` and `DynamicTypeResolution`.<br><br>In case of `CustomGenericType` the actual type has to be defined as configuration parameter for JEAF Generator in the Maven Configuration. This way you can define your own types.<br><br>In case of `DynamicTypeResolution` custom logic is used to resolve the type of a soft link or Java as well as for OpenAPI. This requires that this custom logic is provided as extension to JEAF Generator during execution. For further information please refer to: https://www.jeaf-generator.io/developer-guide/extension-points |
 
 
 
