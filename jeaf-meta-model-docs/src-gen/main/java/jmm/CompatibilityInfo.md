@@ -8,9 +8,16 @@ menubar: jmm_menu
 # Stereotype `«CompatibilityInfo»`
 The stereotype `«CompatibilityInfo»` can be used to define information about version compatibility in the UML model. 
 
-This stereotype can be seen as a normalization for compatibility info defined directly on a compatibility group. Using this stereotype it can be avoided to define the same information multiple times.
+The compatibility information consolidates all data required to manage compatibility across major versions.
 
-This compatibility info will be considered for deprecations and breaking changes information. 
+In addition to centralizing release-related information, it defines the validation groups used to enforce compatibility requirements.
+
+The compatibility information also specifies when a major version becomes available in production (PROD) and when it reaches its end-of-life (EOL) date.
+
+This compatibility info will be considered for deprecations and breaking changes information.
+
+
+
 
 <br>
 
@@ -19,9 +26,9 @@ This compatibility info will be considered for deprecations and breaking changes
 | **Applicable Elements** | `Component`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `sunsetDate`   | `String` | The sunset date indicates the date (including) until which compatibility with a specific version will be provided.<br><br>The expected date format is `yyyy-mm-dd`. |
+| `goLiveDate`   | `String` | The date on which the version becomes public available for the first time in production environments. |
+| `endOfLifeDate`   | `String` | The date on which the represented version reaches end-of-life (EOL). Starting from this date, the version is no longer supported in production environments.<br><br>Consumers must have adapted their code by this date to avoid compatibility issues.<br><br>The expected date format is `yyyy-mm-dd`. |
 | `baseVersion`   | `String` | Name of the version based on which compatibility will be defined e.g. version `3.x`. |
-| `firstNonCompatibleVersion`   | `String` | Name of the first version that will not be compatible anymore. |
 
 
 

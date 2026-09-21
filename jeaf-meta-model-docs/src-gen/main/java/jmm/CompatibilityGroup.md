@@ -8,20 +8,16 @@ menubar: jmm_menu
 # Stereotype `«CompatibilityGroup»`
 The stereotype `«CompatibilityGroup»` can be used to group constraints that apply to specific versions of an API.
 
-To achieve this, each property that belongs to a compatibility group must define a dependency on that group. Constraints can then be specified on this dependency that differ from the constraints defined directly on the property. This makes it possible to define version-specific constraints.
+To achieve this, each element that belongs to a compatibility group must define a dependency on that group. Constraints can then be specified on this dependency that differ from the constraints defined directly on the element. This makes it possible to define version-specific constraints.
 
-Default constraints are defined directly on the property, while version-specific constraints are defined on the dependency.
+Default constraints are defined directly on the element, while version-specific constraints are defined on the dependency.
 
 <br>
 
 | **Stereotype**          | `«CompatibilityGroup»` | |
 | ----------------------- | -------------- | |
 | **Applicable Elements** | `Component`        |
-| **Tagged Values**       |                       |                                                                                                                                                                                                          |
-| **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `sunsetDate`   | `String` | The sunset date indicates the date (including) until which compatibility with a specific version will be provided.<br><br>The expected date format is `yyyy-mm-dd`. |
-| `baseVersion`   | `String` | Name of the version based on which compatibility will be defined e.g. version `3.x`. |
-| `firstNonCompatibleVersion`   | `String` | Name of the first version that will not be compatible anymore. |
+| **Tagged Values**       | `none`           |
 
 
 

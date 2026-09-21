@@ -7,6 +7,7 @@ menubar: jmm_menu
 
 # Stereotype `«Optional»`
 The `«Optional»` stereotype is designed to be used together with validation groups to indicate that a property or parameter is optional (`lower = 0`).
+
 It affects only the property's lower multiplicity bound and can be applied to both single-valued and multi-valued properties.
 
 <br>
