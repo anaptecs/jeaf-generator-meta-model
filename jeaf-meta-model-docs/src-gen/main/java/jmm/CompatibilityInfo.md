@@ -26,9 +26,9 @@ This compatibility info will be considered for deprecations and breaking changes
 | **Applicable Elements** | `Component`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
+| `baseVersion`   | `String` | Name of the version based on which compatibility will be defined e.g. version `3.x`. |
 | `goLiveDate`   | `String` | The date on which the version becomes public available for the first time in production environments. |
 | `endOfLifeDate`   | `String` | The date on which the represented version reaches end-of-life (EOL). Starting from this date, the version is no longer supported in production environments.<br><br>Consumers must have adapted their code by this date to avoid compatibility issues.<br><br>The expected date format is `yyyy-mm-dd`. |
-| `baseVersion`   | `String` | Name of the version based on which compatibility will be defined e.g. version `3.x`. |
 
 
 
