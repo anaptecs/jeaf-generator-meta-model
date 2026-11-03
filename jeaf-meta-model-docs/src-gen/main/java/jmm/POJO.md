@@ -27,6 +27,7 @@ Stereotype `«POJO»` can be used to model a POJO (Plain old Java object). It de
 | `validateOnBuild`   | `Boolean` |  |
 | `ofMethod`   | `OfMethodType` |  |
 | `suppressSubtypesMapping`   | `Boolean` |  |
+| `ignoreUnknownSubtypes`   | `TriState` | Tag can be used to define if unknown subtypes should be ignored during Jackson deserialization of the `«POJO»`.<br><br>This information is only relevant during Jackson deserialization when no explicit type mapping is available for the detected type. A typical scenario is when the client and server use different versions of the same API and a new class has been introduced into an existing class hierarchy.<br><br>In addition to this tag here, it is also possible to control behavior using stereotype `«JSONDefaultImpl»`. |
 
 <br>
 
