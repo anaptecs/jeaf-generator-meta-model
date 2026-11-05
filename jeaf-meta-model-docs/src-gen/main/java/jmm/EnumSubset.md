@@ -14,7 +14,7 @@ This can be achieved either by defining an explicit list of allowed literals via
 
 | **Stereotype**          | `«EnumSubset»` | |
 | ----------------------- | -------------- | |
-| **Applicable Elements** | `Parameter` `Class` `Property` `Dependency`        |
+| **Applicable Elements** | `Parameter` `Property` `Dependency`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
 | `allowedLiterals`   | `String` | Names of the literals that are allowed. |
