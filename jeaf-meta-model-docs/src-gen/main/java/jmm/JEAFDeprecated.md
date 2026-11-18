@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«JEAFDeprecated»`
-Deprecations are markers that indicate that a specific model element should not be used any longer. To do so, you just have to apply the stereotype `«JEAFDeprecated»` to the model element. This can be anything from a whole class or interface to an parameter of an operation.
+Deprecations are markers that indicate that a specific model element should not be used any longer. To do so, you just have to apply the stereotype `«JEAFDeprecated»` to the model element. This can be anything from a whole class or interface to a parameter of an operation.
 
 <br>
 
@@ -15,7 +15,7 @@ Deprecations are markers that indicate that a specific model element should not 
 | **Applicable Elements** | `Element`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `description`   | `String` | Explanation which the element is deprecated and what should be done as an alternative. |
+| `description`   | `String` | Explanation why the element is deprecated and what should be done as an alternative. |
 | `since`   | `String` | Information since when a model element is deprecated e.g. a concrete version or date. |
 | `removedWith`   | `String` | Version in which a deprecation will be removed. |
 | `goLiveDate`   | `String` | The date on which the deprecation becomes effective in production environments.<br><br>The expected date format is `yyyy-mm-dd`. |

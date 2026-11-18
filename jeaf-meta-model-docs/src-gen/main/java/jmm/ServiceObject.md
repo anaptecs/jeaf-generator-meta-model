@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«ServiceObject»`
-Stereotype `«Service Object»` is used to model service objects. They define together with the service interface (stereotype «JEAFService») the public interface of a service.
+Stereotype `«ServiceObject»` is used to model service objects. They define together with the service interface (stereotype «JEAFService») the public interface of a service.
 
 <br>
 
@@ -27,7 +27,7 @@ Stereotype `«Service Object»` is used to model service objects. They define to
 | `validateOnBuild`   | `Boolean` |  |
 | `ofMethod`   | `OfMethodType` |  |
 | `suppressSubtypesMapping`   | `Boolean` |  |
-| `ignoreUnknownSubtypes`   | `TriState` | Tag can be used to define if unknown subtypes should be ignored during Jackson deserialization of the `«POJO»`.<br><br>This information is only relevant during Jackson deserialization when no explicit type mapping is available for the detected type. A typical scenario is when the client and server use different versions of the same API and a new class has been introduced into an existing class hierarchy.<br><br>In addition to this tag here, it is also possible to control behavior using stereotype `«JSONDefaultImpl»`. |
+| `ignoreUnknownSubtypes`   | `TriState` | Tag can be used to define if unknown subtypes should be ignored during Jackson deserialization of the `«ServiceObject»`.<br><br>This information is only relevant during Jackson deserialization when no explicit type mapping is available for the detected type. A typical scenario is when the client and server use different versions of the same API and a new class has been introduced into an existing class hierarchy.<br><br>In addition to this tag here, it is also possible to control behavior using stereotype `«JSONDefaultImpl»`. |
 
 <br>
 

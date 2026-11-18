@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«ModelCheck»`
-Stereotype  `«ModelCheck»` can be used to document JEAF Generator checks, standard and custom ones.
+Stereotype `«ModelCheck»` can be used to document JEAF Generator checks, standard and custom ones.
 
 <br>
 
@@ -18,7 +18,7 @@ Stereotype  `«ModelCheck»` can be used to document JEAF Generator checks, stan
 | `title`   | `String` | Title / short description of a check. Further details are supposed to be provided as comment / documentation of the check. |
 | `type`   | `CheckType` | Type of the check. Possible values are `ERROR` and `WARNING`. |
 | `modelElementTypes`   | `Element` | Model element types which are covered by this check. |
-| `nonMandatoryCheck`   | `Boolean` |  |
+| `nonMandatoryCheck`   | `Boolean` | Tag defines if the check is a non-mandatory check. Model elements can be excluded from non-mandatory checks using Maven Plugin configuration `nonMandatoryCheckExclusions`, or all non-mandatory checks can be disabled using `disableAllNonMandatoryChecks`. |
 | `active`   | `Boolean` | Tag can be used to define if the check is active or not. |
 
 
