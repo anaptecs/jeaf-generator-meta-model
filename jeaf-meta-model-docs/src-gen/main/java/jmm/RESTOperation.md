@@ -8,7 +8,7 @@ menubar: jmm_menu
 # Stereotype `«RESTOperation»`
 Stereotype `«RESTOperation»` is used to mark that an operation of a service should also be accessible via REST. 
 
-Please be aware that the stereotype can only be applied on an operation of an interface that is marked as «JEAFService».
+The stereotype can only be applied to operations of an interface that is marked as `«RESTResource»`, or of a `«JEAFService»` that is extended by REST resources, which then inherit the REST operation (e.g. a common operation to get system information).
 
 <br>
 
@@ -17,7 +17,7 @@ Please be aware that the stereotype can only be applied on an operation of an in
 | **Applicable Elements** | `Operation`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `path`   | `String` | Path under which the REST resource should be available. The attribute is optional in case that a path is already defined for the REST resource. |
+| `path`   | `String` | Path of the operation, relative to the REST resource. If the REST resource defines a `path`, the operation path is added to it as further path segment and must not start with `/`, e.g. `{id}/versions`. If the REST resource defines an `operationPathPrefix`, the operation path is appended to the prefix without any separator, e.g. `/{id}` or `:search`. The tagged value is optional if the REST resource defines a path. |
 | `httpMethods`   | `HTTPMethod` | HTTP methods that are used to request the operation. At least one method must be defined. |
 | `produces`   | `MediaType` | Optional definition of the media types that are used to encode the responses of the REST calls (e.g. JSON, XML etc.). |
 | `consumes`   | `MediaType` | Optional definition of the media types that are supported to be used to encode REST requests (e.g. JSON, XML etc.). |

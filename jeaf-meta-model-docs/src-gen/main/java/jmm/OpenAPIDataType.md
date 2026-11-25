@@ -6,7 +6,7 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«OpenAPIDataType»`
-Stereotype `«OpenAPIDataType»` can be used to have a strong typing in Java and d flat representation in OpenAPI specification / JSON.
+Stereotype `«OpenAPIDataType»` can be used to have a strong typing in Java and a flat representation in OpenAPI specification / JSON.
 
 During serialization the "real" Java object will be converted into a primitive JSON representation e.g. a String. During deserialization the other way round. This helps to have nice JSON representation (not nested objects with just one property) and also have real types in Java.
 

@@ -15,18 +15,18 @@ Stereotype `«POJO»` can be used to model a POJO (Plain old Java object). It de
 | **Applicable Elements** | `Class`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `hasCustomImplementation`   | `Boolean` | Tagged value can be used to define if the class has some custom implementation. If set to `true` then a base class with all the information from the UML model will be generated and a an empty class for the custom implementation |
+| `hasCustomImplementation`   | `Boolean` | Tagged value can be used to define if the class has some custom implementation. If set to `true` then a base class with all the information from the UML model will be generated and an empty class for the custom implementation |
 | `hasCustomSerialization`   | `Boolean` | Tagged value can be used to define that a classes has a custom serialization mechanism. |
 | `customizeGenericBuilder`   | `Boolean` | Tagged value can be used to further customize the generated generic builder. This e.g. allows to add custom operations to a generated builder.<br><br>This option only becomes active if a class has a custom implementation. |
 | `compositeDataType`   | `Boolean` |  |
 | `compositeDataTypePublicFieldName`   | `String` |  |
 | `compositeDataTypeReadonly`   | `Boolean` |  |
 | `compositeDataTypeCustomSerialization`   | `Boolean` |  |
-| `technicalBaseClass`   | `Boolean` |  |
+| `technicalBaseClass`   | `Boolean` | Tagged value can be used to mark a class as technical base class. A technical base class only provides common properties or behavior for its subclasses and is not part of the type hierarchy from a JSON / OpenAPI perspective: polymorphism (type information and subtype mapping) starts at its direct subclasses.<br><br>If set to `true` then the type information for polymorphism (Jackson annotations `@JsonTypeInfo` and `@JsonSubTypes` as well as the discriminator in OpenAPI) is not generated for this class but for its direct subclasses that have subclasses themselves. Thus each of these subclasses acts as top level element of its own type hierarchy.<br><br>Default value: `false` |
 | `readOnly`   | `Boolean` |  |
 | `validateOnBuild`   | `Boolean` |  |
 | `ofMethod`   | `OfMethodType` |  |
-| `suppressSubtypesMapping`   | `Boolean` |  |
+| `suppressSubtypesMapping`   | `Boolean` | Tagged value can be used to suppress the generation of the subtype mapping (`@JsonSubTypes`) on the top-level class of a class hierarchy. The type information is still generated. This is useful if subtypes are registered elsewhere, e.g. because they are defined in another module.<br><br>Default value: `false` |
 | `ignoreUnknownSubtypes`   | `TriState` | Tag can be used to define if unknown subtypes should be ignored during Jackson deserialization of the `«POJO»`.<br><br>This information is only relevant during Jackson deserialization when no explicit type mapping is available for the detected type. A typical scenario is when the client and server use different versions of the same API and a new class has been introduced into an existing class hierarchy.<br><br>In addition to this tag here, it is also possible to control behavior using stereotype `«JSONDefaultImpl»`. |
 
 <br>

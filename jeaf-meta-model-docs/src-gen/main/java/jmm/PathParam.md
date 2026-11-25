@@ -6,7 +6,9 @@ menubar: jmm_menu
 ---
 
 # Stereotype `«PathParam»`
-Stereotype `«PathParam»` is used to mark that a parameter of an REST operation that it’s value should be taken from the request path. Please be aware that the stereotype can only be applied on an operation of an interface that is marked as `«RESTResource»` and the operation is marked as `«RESTOperation»`.
+Stereotype `«PathParam»` is used to mark that a parameter of an REST operation that it’s value should be taken from the request path. 
+
+The stereotype can be applied to parameters of REST operations and to properties of a class that is marked as `«BeanParam»`.
 
 <br>
 
@@ -15,7 +17,7 @@ Stereotype `«PathParam»` is used to mark that a parameter of an REST operation
 | **Applicable Elements** | `Parameter` `Property`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `value`   | `String` | Name of the parameter as it is defined in the operations path e.g. id in path `/doSomething/{id}`.<br><br>If no name is defined then the name of the property / parameter will also be used for the header field. |
+| `value`   | `String` | Name of the parameter as it is defined in the operation's path, e.g. `id` in path `/doSomething/{id}`. If no name is defined then the name of the property / parameter will be used. |
 
 <br>
 

@@ -17,8 +17,8 @@ Please be aware that the stereotype only makes sense to be used on interfaces th
 | **Applicable Elements** | `Interface`        |
 | **Tagged Values**       |                       |                                                                                                                                                                                                          |
 | **Name**                | **Type**              | **Description**                                                                                                                                                                                          |
-| `path`   | `String` | Path under which the REST resource should be available. The attribute is optional. However as from a REST perspective it’s a best practice to define it. So it’s strongly recommended to do so already in the UML model. |
-| `operationPathPrefix`   | `String` | Path prefix for operation will be added to every operation of the service. No separators etc. will be added by JEAF Generator. |
+| `path`   | `String` | Path under which the REST resource is available, e.g. `/bookings`. It has to start with `/`. The tagged value is optional; however, from a REST perspective it's a best practice to define it. `path` and `operationPathPrefix` exclude each other. |
+| `operationPathPrefix`   | `String` | Path prefix that is added to the path of every operation of the service, e.g. `bookings`. No separators etc. will be added by JEAF Generator. `path` and `operationPathPrefix` exclude each other. |
 | `produces`   | `MediaType` | Optional definition of the media types that are used to encode the responses of the REST calls (e.g. `JSON`, `XML` etc.). |
 | `consumes`   | `MediaType` | Optional definition of the media types that are supported to be used to encode REST requests (e.g. `JSON`, `XML` etc.). |
 | `async`   | `Boolean` | Tagged value defines if the generated REST Resource / Controller should make use of server-side async processing.<br><br>Please be aware that async processing is not supported by all target platforms. |
