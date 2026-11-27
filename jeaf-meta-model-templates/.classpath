@@ -63,5 +63,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/jeaf-generator-oaw"/>
+	<classpathentry kind="src" output="target/eclipse-xmi" path="xmi"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
